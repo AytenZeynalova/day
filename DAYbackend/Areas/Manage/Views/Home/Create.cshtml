@@ -1,0 +1,61 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post">
+                <div class="mb-3">
+                    <label asp-for="Img" class="form-label">Img</label>
+                    <input asp-for="Img" class="form-control">
+                    <span asp-validation-for="Img"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control">
+                    <span asp-validation-for="Title"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Desc" class="form-label">Desc</label>
+                    <input asp-for="Desc" class="form-control">
+                    <span asp-validation-for="Desc"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="TwttrUrl" class="form-label">TwttrUrl</label>
+                    <input asp-for="TwttrUrl" class="form-control">
+                    <span asp-validation-for="TwttrUrl"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FbUrl" class="form-label">FbUrl</label>
+                    <input asp-for="FbUrl" class="form-control">
+                    <span asp-validation-for="FbUrl"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="InstaUrl" class="form-label">InstaUrl</label>
+                    <input asp-for="InstaUrl" class="form-control">
+                    <span asp-validation-for="InstaUrl"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="LinkdnUrl" class="form-label">LinkdnUrl</label>
+                    <input asp-for="LinkdnUrl" class="form-control">
+                    <span asp-validation-for="LinkdnUrl"></span>
+                </div>
+
+                <a asp-action="index" asp-controller="home" class="btn btn-primary">Submit</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
